@@ -36,7 +36,8 @@ User.init(
       },
     },
     favoriteBooks: {
-      type: DataTypes.ARRAY(DataType.STRING), //We need to make sure this syntax is right
+      // TODO: Make many to many database for favorites
+      type: DataTypes.STRING,
       allowNull: false,
     }
   },
