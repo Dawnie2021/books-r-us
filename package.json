@@ -1,0 +1,29 @@
+{
+  "name": "14-mvc-instructor-provided-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "launch": "npm install && npm run watch",
+    "prestart": "node config/init",
+    "start": "node server",
+    "preseed": "node config/init seed",
+    "seed": "node seeds/index",
+    "prewatch": "node config/init",
+    "watch": "nodemon server",
+    "postinstall": "cp ./.env.example ./.env"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}
