@@ -9,6 +9,10 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/signUp', (req, res) => {
+  res.render('signUp');
+});
+
 router.get('/dashboard', (req, res) => {
   res.render('dashboard');
 });
