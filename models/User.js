@@ -35,6 +35,10 @@ User.init(
         len: [8],
       },
     },
+    favoriteBooks: {
+      type: DataTypes.ARRAY(DataType.STRING), //We need to make sure this syntax is right
+      allowNull: false,
+    }
   },
   {
     hooks: {
