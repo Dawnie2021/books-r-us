@@ -18,11 +18,10 @@ Book.init({
   book_author: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: false,
   },
   book_description: {
     type: DataTypes.TEXT,
-    allowNull: true,
+    allowNull: false,
   },
 
   genre: {

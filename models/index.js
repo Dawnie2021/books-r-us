@@ -3,20 +3,20 @@ const Book = require('./book');
 const FavoriteBook = require('./favoriteBook');
 
 
-User.hasMany(Book, {
-    foreignKey: 'user_id',
-    onDelete: 'CASCADE'
-});
+// User.hasMany(Book, {
+//     foreignKey: 'user_id',
+//     onDelete: 'CASCADE'
+// });
 
-Book.belongsTo(User, {
-    foreignKey: 'user_id'
-});
+// Book.belongsTo(User, {
+//     foreignKey: 'user_id'
+// });
 
-FavoriteBook.belongsToMany(Book, {
-    through: Book,
-    // foreignKey: book_id
+// FavoriteBook.belongsToMany(Book, {
+//     through: Book,
+//     // foreignKey: book_id
 
-});
+// });
 
 
 
