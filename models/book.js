@@ -11,27 +11,40 @@ Book.init({
     primaryKey: true,
     autoIncrement: true,
   },
-  name: {
+  book_name: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  author: {
+  book_author: {
     type: DataTypes.STRING,
     allowNull: false,
     unique: false,
   },
-  description: {
-    type: DataTypes.STRING,
+  book_description: {
+    type: DataTypes.TEXT,
     allowNull: true,
   },
-  imageUrl: {
-    type: DataTypes.STRING,
-    allowNull: true,
-  },
+
   genre: {
     type: DataTypes.STRING,
     allowNull: false,
-  },
-});
+  }
+
+  // imageUrl: {
+  //   type: DataTypes.STRING,
+  //   allowNull: true,
+  // }
+},
+
+{
+  sequelize,
+  timestamps: false,
+  freezeTableName: true,
+  underscored: true,
+  modelName: 'book',
+}
+
+
+);
 
 module.exports = Book;
