@@ -1,16 +1,16 @@
 const User = require('./User');
-const Book = require('./book');
-const FavoriteBook = require('./favoriteBook');
+const Book = require('./Book');
+// const FavoriteBook = require('./FavoriteBook');
 
 
-// User.hasMany(Book, {
-//     foreignKey: 'user_id',
-//     onDelete: 'CASCADE'
-// });
+User.hasMany(Book, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE'
+});
 
-// Book.belongsTo(User, {
-//     foreignKey: 'user_id'
-// });
+Book.belongsTo(User, {
+    foreignKey: 'user_id'
+});
 
 // FavoriteBook.belongsToMany(Book, {
 //     through: Book,
@@ -24,5 +24,5 @@ const FavoriteBook = require('./favoriteBook');
 module.exports = { 
 User,
 Book,
-FavoriteBook,
+// FavoriteBook,
 };

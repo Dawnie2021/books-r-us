@@ -4,7 +4,8 @@ const sequelize = require("../config/connection");
 
 class Book extends Model {}
 
-Book.init({
+Book.init(
+  {
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
