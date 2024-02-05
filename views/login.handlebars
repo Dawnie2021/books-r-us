@@ -23,9 +23,6 @@
       aria-label="menu"
       aria-expanded="false"
     >
-      <span aria-hidden="true">1</span>
-      <span aria-hidden="true">2</span>
-      <span aria-hidden="true">3</span>
     </a>
   </div>
 </nav>
@@ -64,28 +61,15 @@
     </div>
   </div>
   <script type="text/javascript">
-    //const bcrypt = require("bcrypt");
-
-    const submitButton = document.querySelector("#submit");
-    const email = document.querySelector("#email");
-    const password = document.querySelector("#password");
-
-    const submitted = () => {
-      console.log(email.value, password.value,);
-    };
-
-    const saltPassword = (password) => {
-      for (let saltRounds = 10; saltRounds < 21; saltRounds++) {
-        console.time(`bcrypt | cost: ${saltRounds}, time to hash`);
-        bcrypt.hashSync(password, saltRounds);
-        console.timeEnd(`bcrypt | cost: ${saltRounds}, time to hash`);
-      }
-
-      return password;
-    }
-
-    submitButton.addEventListener("click",
-    submitted);
+    //const bcrypt = require("bcrypt"); const submitButton =
+    document.querySelector("#submit"); const email =
+    document.querySelector("#email"); const password =
+    document.querySelector("#password"); const submitted = () => {
+    console.log(email.value, password.value); }; const saltPassword = (password)
+    => { for (let saltRounds = 10; saltRounds < 21; saltRounds++) {
+    console.time(`bcrypt | cost: ${saltRounds}, time to hash`);
+    bcrypt.hashSync(password, saltRounds); console.timeEnd(`bcrypt | cost:
+    ${saltRounds}, time to hash`); } return password; }
+    submitButton.addEventListener("click", submitted);
   </script>
-  <script src="public\js\login.js"></script>
 </section>
