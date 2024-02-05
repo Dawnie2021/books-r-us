@@ -1,3 +1,64 @@
-<header>
-  <h2>Login</h2>
-</header>
+<nav
+  class="navbar has-text-centered"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <h1 class="title">Books-Я-Us</h1>
+    </a>
+    <a class="navbar-item" href="../">
+      <div class="subtitle">Home</div>
+    </a>
+    <a
+      class="navbar-item"
+      target="#blank"
+      href="https://github.com/Dawnie2021/books-r-us"
+    >
+      <div class="subtitle">GitHub</div>
+    </a>
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+    >
+    </a>
+  </div>
+</nav>
+<section class="hero is-fullheight">
+  <div class="section is-medium"></div>
+  <div class="hero-body has-text-centered is-flex-direction-column mb-5">
+    <h1 class="m-3 title">Log In</h1>
+    <div>
+      <div class="field">
+        <p class="control has-icons-right">
+          <input id="email" class="input" type="email" placeholder="Email" />
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control">
+          <input
+            id="password"
+            class="input"
+            type="password"
+            placeholder="Password"
+          />
+          <span class="is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </p>
+      </div>
+      <div class="control">
+        <button id="submit" class="button is-outline">Submit</button>
+      </div>
+    </div>
+  </div>
+  <script src="/js/login.js"></script>
+</section>
