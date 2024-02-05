@@ -18,7 +18,12 @@ Book.belongsTo(User, {
 
 // });
 
+User.belongsToMany(User, {
+     through: User })
 
+
+Book.belongsToMany(Book, 
+    { through: userBook })
 
 
 module.exports = { 
