@@ -29,33 +29,63 @@
     </a>
   </div>
 </nav>
-  <section class="hero is-fullheight">
-    <div class="section is-medium"></div>
-    <div class="hero-body has-text-centered is-flex-direction-column mb-5">
-      <h1 class="m-3 title">Log In</h1>
-      <div>
-        <div class="field">
-          <p class="control has-icons-right">
-            <input class="input" type="email" placeholder="Email" />
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
-          </p>
-        </div>
-        <div class="field">
-          <p class="control">
-            <input class="input" type="password" placeholder="Password" />
-            <span class="is-small is-left">
-              <i class="fas fa-lock"></i>
-            </span>
-          </p>
-        </div>
-        <div class="control">
-          <button id="submit" class="button is-outline">Submit</button>
-        </div>
+<section class="hero is-fullheight">
+  <div class="section is-medium"></div>
+  <div class="hero-body has-text-centered is-flex-direction-column mb-5">
+    <h1 class="m-3 title">Log In</h1>
+    <div>
+      <div class="field">
+        <p class="control has-icons-right">
+          <input id="email" class="input" type="email" placeholder="Email" />
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control">
+          <input
+            id="password"
+            class="input"
+            type="password"
+            placeholder="Password"
+          />
+          <span class="is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </p>
+      </div>
+      <div class="control">
+        <button id="submit" class="button is-outline">Submit</button>
       </div>
     </div>
-  </section>
+  </div>
+  <script type="text/javascript">
+    //const bcrypt = require("bcrypt");
+
+    const submitButton = document.querySelector("#submit");
+    const email = document.querySelector("#email");
+    const password = document.querySelector("#password");
+
+    const submitted = () => {
+      console.log(email.value, password.value,);
+    };
+
+    const saltPassword = (password) => {
+      for (let saltRounds = 10; saltRounds < 21; saltRounds++) {
+        console.time(`bcrypt | cost: ${saltRounds}, time to hash`);
+        bcrypt.hashSync(password, saltRounds);
+        console.timeEnd(`bcrypt | cost: ${saltRounds}, time to hash`);
+      }
+
+      return password;
+    }
+
+    submitButton.addEventListener("click",
+    submitted);
+  </script>
+  <script src="public\js\login.js"></script>
+</section>
