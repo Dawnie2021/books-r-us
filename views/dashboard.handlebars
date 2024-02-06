@@ -1,34 +1,4 @@
-<nav
-  class="navbar has-text-centered"
-  role="navigation"
-  aria-label="main navigation"
->
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <h1 class="title">Books-Я-Us</h1>
-    </a>
-    <a class="navbar-item" href="../">
-      <div class="list-item is-active subtitle">Home</div>
-    </a>
-    <a class="navbar-item" href="./dashboard">
-      <div class="list-item is-active subtitle">Dashboard</div>
-    </a>
-    <a
-      class="navbar-item"
-      target="#blank"
-      href="https://github.com/Dawnie2021/books-r-us"
-    >
-      <div class="subtitle">GitHub</div>
-    </a>
-    <a
-      role="button"
-      class="navbar-burger"
-      aria-label="menu"
-      aria-expanded="false"
-    >
-    </a>
-  </div>
-</nav>
+{{> navbar }}
 <section class="hero is-fullheight">
   <div class="section is-medium"></div>
   <div class="hero-body is-flex-direction-column mb-5">
@@ -43,6 +13,11 @@
       </div>
     </div>
   </div>
-  <script src="js/dashboard.js"></script>
+  <script id="template" type="text/x-handlebars-template">
+    <div> The word is:
+    {{data}}
+    </div>
+  </script>
   <link rel="stylesheet" href="css/dashboard.css" />
 </section>
+<script type="" src="js/dashboard.js"></script>
