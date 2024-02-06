@@ -27,7 +27,7 @@ Book.init(
   genre: {
     type: DataTypes.STRING,
     allowNull: false,
-  }
+  },
 
   // imageUrl: {
   //   type: DataTypes.STRING,

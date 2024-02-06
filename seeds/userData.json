@@ -2,11 +2,13 @@
   {
     "name": "Jordan",
     "email": "jordan99@msn.com",
-    "password": "password12345"
+    "password": "password12345",
+    "books": [1, 2]
   },
   {
     "name": "Blake",
     "email": "the_blake@yahoo.com",
-    "password": "password12345"
+    "password": "password12345",
+    "books": [2, 4]
   }
 ]
