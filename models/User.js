@@ -35,11 +35,7 @@ User.init(
         len: [8],
       },
     },
-    favoriteBooks: {
-      // TODO: Make many to many database for favorites
-      type: DataTypes.STRING,
-      allowNull: false,
-    }
+    
   },
   {
     hooks: {
