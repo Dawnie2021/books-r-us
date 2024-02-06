@@ -25,6 +25,7 @@ router.post('/', async (req, res) => {
 router.post('/signup', async (req, res) => {
     try {
        const userData = await User.create (req.body);
+       return res.json('Success');
      } catch(err) {
          console.log(err);
      }
