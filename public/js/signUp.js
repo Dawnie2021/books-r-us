@@ -6,4 +6,6 @@ const submitted = () => {
     console.log(email.value, password.value);
 };
 
+
+
 submitButton.addEventListener("click", submitted);
