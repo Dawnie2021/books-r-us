@@ -1,34 +1,48 @@
-<header>
-  <h2>Dashboard</h2>
-</header>
-
-<article>
-  <footer>
-    <a href="#" role="button">View</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="secondary">Delete</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="contrast">Update</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="outline">Edit</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="contrast outline">Cancel</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="secondary outline">Save</a>
-  </footer>
-</article>
+<nav
+  class="navbar has-text-centered"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <h1 class="title">Books-Я-Us</h1>
+    </a>
+    <a class="navbar-item" href="../">
+      <div class="list-item is-active subtitle">Home</div>
+    </a>
+    <a class="navbar-item" href="./dashboard">
+      <div class="list-item is-active subtitle">Dashboard</div>
+    </a>
+    <a
+      class="navbar-item"
+      target="#blank"
+      href="https://github.com/Dawnie2021/books-r-us"
+    >
+      <div class="subtitle">GitHub</div>
+    </a>
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+    >
+    </a>
+  </div>
+</nav>
+<section class="hero is-fullheight">
+  <div class="section is-medium"></div>
+  <div class="hero-body is-flex-direction-column mb-5">
+    <h1 class="m-3 title">Dashboard</h1>
+    <div>
+      <div id="parent" class="is-flex">
+        <figure class="card-base card m-2">
+          <div class="card-body playlist-name subtitle has-text-centered">
+            Title
+          </div>
+        </figure>
+      </div>
+    </div>
+  </div>
+  <script src="js/dashboard.js"></script>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</section>
