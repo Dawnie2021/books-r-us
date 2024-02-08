@@ -28,7 +28,13 @@ const sess = {
 
 app.use(session(sess));
 
-app.engine('handlebars', hbs.engine);
+app.engine('handlebars', exphbs({
+  layoutsDir: `${__dirname}/views/layouts`,
+  extname: 'handlebars',
+  defaultLayout: 'main',
+  partialsDir: `${__dirname}/views/partials`
+}));
+
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
