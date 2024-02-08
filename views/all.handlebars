@@ -1,0 +1,57 @@
+{{!-- <div class='book-container'>
+  <div class='card-header col-md-10'>
+    <h2>
+      &#127869 Books-Я-Us
+    </h2>
+  </div>
+  {{#each book as |book|}}
+    <div class='dish col-md-5'>
+      <p>
+        {{book.id}}.
+        {{book.book_title}}
+      </p>
+    </div>
+    <div class='col-md-7'>
+      <p>
+       Author:
+        {{book.author_name}}
+      </p>
+    </div>
+  {{/each}}
+  <div class='add-dish-container'>
+    <h2>
+      add a new book!
+    </h2>
+    <form class='new-book-form' action"/api/book" method="POST">
+      <label for='book_title'>
+        Book Title:
+      </label>
+      <br />
+      <textarea id='book_title' name='book_title' rows='2' cols='30'>
+        {{book_title}}
+      </textarea>
+      <br />
+      <label for='description'>
+        Description:
+      </label>
+      <br />
+      <textarea id='description' name='description' rows='5' cols='30'>
+        {{book_description}}
+      </textarea>
+      <br />
+      <label for='Author_name'>
+        Author Name:
+      </label>
+      <br />
+      <textarea id='author_name' name='author_name' rows='2' cols='30'>
+        {{author_name}}
+      </textarea>
+      <br />
+      <button type='submit' value='Submit'>
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+<!-- This is the form for adding a new dish -->
+<script src='></script> --}}

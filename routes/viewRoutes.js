@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { User } = require('../models');
 const withAuth = require('../utils/auth');
+// added seralize method so we dont have to do the .map and .get
+const serialize = (data) => JSON.parse(JSON.stringify(data));
 
 
 router.get('/', withAuth, async (req, res) => {
@@ -10,7 +12,7 @@ router.get('/', withAuth, async (req, res) => {
       order: [['name', 'ASC']],
     });
 
-    const users = userData.map((project) => project.get({ plain: true }));
+    const users = serialize(userData);
 
     res.render('index', {
       users,
