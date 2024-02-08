@@ -1,34 +1,17 @@
-<header>
-  <h2>Dashboard</h2>
-</header>
-
-<article>
-  <footer>
-    <a href="#" role="button">View</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="secondary">Delete</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="contrast">Update</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="outline">Edit</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="contrast outline">Cancel</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="secondary outline">Save</a>
-  </footer>
-</article>
+<section class="hero is-fullheight">
+  <div class="section is-medium"></div>
+  <div class="hero-body is-flex-direction-column mb-5">
+    <h1 class="m-3 title">Dashboard</h1>
+    <div>
+      <div id="parent" class="is-flex">
+        <figure class="card-base card m-2">
+          <div class="card-body playlist-name subtitle has-text-centered">
+            {{book.title}}
+          </div>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="js/dashboard.js"></script>
+<link rel="stylesheet" href="css/dashboard.css" />
