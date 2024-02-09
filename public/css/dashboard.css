@@ -1,6 +1,6 @@
 .card {
-  height: 120px;
-  width: 80px;
+  height: 180px;
+  width: 120px;
 
 }
 
@@ -10,5 +10,3 @@
  align-items: center;
 }
 
-.card-body {
-}
