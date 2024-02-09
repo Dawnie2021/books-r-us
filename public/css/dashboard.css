@@ -1,7 +1,12 @@
 .card {
-  height: 90px;
-  width: 60px;
+  height: 180px;
+  width: 120px;
+
 }
 
-.card-body {
+.card-base{
+  display: flex;
+  justify-content:center;
+ align-items: center;
 }
+

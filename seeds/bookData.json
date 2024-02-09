@@ -4,7 +4,7 @@
         "book_name": "The Da Vinci Code",
         "book_author": "Dan Brown",
         "book_description": "Follows symbologist Robert Langdon as he unravels a murder mystery in the Louvre Museum, delving into a conspiracy involving the Catholic Church and the search for the Holy Grail.",
-        "genre": "mystery"
+        "genre": "Mystery"
        
     },
 
@@ -12,7 +12,7 @@
         "book_name": "Pride and Prejudice",
         "book_author": "Jane Austen",
         "book_description": "Tells the story of Elizabeth Bennet and Mr. Darcy as they naviagte misunderstandings, societal expectations, and their own feelings towards each other in 19th century England.",
-        "genre": "romance"
+        "genre": "Romance"
        
     },
     
@@ -20,7 +20,7 @@
         "book_name": "Dune",
         "book_author": "Frank Herbert",
         "book_description": "It is set in a distant future where noble families control planets and a valuable resource called spice is central to interstellar travel and power struggles.",
-        "genre": "science fiction"
+        "genre": "Science Fiction"
 
     },
 
@@ -28,7 +28,7 @@
         "book_name": "The Hobbit",
         "book_author": "J.R.R Tolkien",
         "book_description": "Follows Bilbo Baggins on a quest to reclaim a treasure guarded by a dragon, encountering various creatures along the way.",
-        "genre": "fantasy"
+        "genre": "Fantasy"
         
     },
 
@@ -36,7 +36,7 @@
         "book_name": "The Shining",
         "book_author": "Stephen King",
         "book_description": "It tells the story of a family who becomes the winter caretakers of an isolated hotel, where supernatural forces drive the father to madness.",
-        "genre": "horror"
+        "genre": "Horror"
      
     },
 
@@ -44,7 +44,7 @@
         "book_name": "Treasure Island",
         "book_author": "Robert Louis Stevenson",
         "book_description": "It follows young Jim Hawkins as he embarks on a preilous journey to find buried treasure, encountering pirates, mutiny, and treacherous seas along the way.",
-        "genre": "adventure"
+        "genre": "Adventure"
         
     },
 
@@ -52,7 +52,7 @@
         "book_name": "The Girl with the Dragon Tattoo",
         "book_author": "Stieg Larsson",
         "book_description": "It follows journalist Mikael Blomkvist and hacker Lisbeth Salander as they investigate a decades old disappearance uncovering dark family secrets and encountering dangerous adversaries.",
-        "genre": "crime"
+        "genre": "Crime"
         
     },
 
@@ -60,7 +60,7 @@
         "book_name": "Educated",
         "book_author": "Tara Westover",
         "book_description": "It recounts Westovers journey from growing up in a strict and isolated household in rural Idaho to eventually pursuing higher education, despite the obstacles and abuse she faced from her family.",
-        "genre": "memoir"
+        "genre": "Memoir"
         
     },
 
@@ -68,8 +68,166 @@
         "book_name": "The Notebook",
         "book_author": "Nicholas Sparks",
         "book_description": "A timeless romance about Noah Calhoun and Allie Nelson, who fall in love on Summer in the 1940s. Despite obstacles and time apart, their enduring love is tested years later, bringing them back together in a heartwarming tale of love and commitment.",
-        "genre": "romance"
+        "genre": "Romance"
         
+    },
+
+    {
+        "book_name": "1984",
+        "book_author": "George Orwell",
+        "book_description": "A dystopian novel set in a totalitarian society, where the government constantly surveils its citizens and controls all aspects of life.",
+        "genre": "dystopian fiction"
+    },
+    {
+        "book_name": "The Hitchhiker's Guide to the Galaxy",
+        "book_author": "Douglas Adams",
+        "book_description": "A comedic science fiction series following the misadventures of Arthur Dent, who is swept off Earth just before it is destroyed to make way for a hyperspace bypass.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "Neuromancer",
+        "book_author": "William Gibson",
+        "book_description": "A cyberpunk novel that explores themes of artificial intelligence, virtual reality, and the implications of technology on society.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "Brave New World",
+        "book_author": "Aldous Huxley",
+        "book_description": "A dystopian novel that explores a future society where humans are genetically engineered and conditioned for specific roles, and where individuality is discouraged.",
+        "genre": "dystopian fiction"
+    },
+    {
+        "book_name": "Foundation",
+        "book_author": "Isaac Asimov",
+        "book_description": "The first book in a science fiction series that follows the rise and fall of a galactic empire, focusing on the efforts of a group of scientists to preserve knowledge and civilization.",
+        "genre": "science fiction"
+    },
+
+    {
+        "book_name": "Snow Crash",
+        "book_author": "Neal Stephenson",
+        "book_description": "A cyberpunk novel set in a future America where the government has largely collapsed, and private corporations wield immense power.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "The Handmaid's Tale",
+        "book_author": "Margaret Atwood",
+        "book_description": "A dystopian novel set in a future totalitarian society where women's rights have been severely restricted, and fertile women are enslaved as 'handmaids' for reproductive purposes.",
+        "genre": "dystopian fiction"
+    },
+    {
+        "book_name": "Hyperion",
+        "book_author": "Dan Simmons",
+        "book_description": "The first book in a science fiction series set in a future where humanity has spread across the galaxy, following a group of pilgrims on a journey to the mysterious world of Hyperion.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "The Road",
+        "book_author": "Cormac McCarthy",
+        "book_description": "A post-apocalyptic novel following a father and his young son as they journey through a desolate landscape, struggling to survive in a world ravaged by an unspecified catastrophe.",
+        "genre": "post-apocalyptic fiction"
+    },
+    {
+        "book_name": "Fahrenheit 451",
+        "book_author": "Ray Bradbury",
+        "book_description": "A dystopian novel set in a future society where books are outlawed and 'firemen' burn any that are found, and where critical thinking and intellectualism are suppressed.",
+        "genre": "dystopian fiction"
+    },
+    {
+        "book_name": "Altered Carbon",
+        "book_author": "Richard K. Morgan",
+        "book_description": "A cyberpunk novel set in a future where consciousness can be transferred between bodies, following a former soldier turned private investigator as he uncovers a vast conspiracy.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "The Martian",
+        "book_author": "Andy Weir",
+        "book_description": "A science fiction novel following an astronaut stranded on Mars who must use his ingenuity to survive while awaiting rescue.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "The Hunger Games",
+        "book_author": "Suzanne Collins",
+        "book_description": "A dystopian novel set in a future where teenagers are forced to participate in a televised fight to the death as punishment for a past rebellion.",
+        "genre": "dystopian fiction"
+    },
+    {
+        "book_name": "I, Robot",
+        "book_author": "Isaac Asimov",
+        "book_description": "A collection of interconnected short stories exploring the ethical implications of robotics and artificial intelligence.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "The War of the Worlds",
+        "book_author": "H.G. Wells",
+        "book_description": "A science fiction novel depicting an alien invasion of Earth, exploring themes of imperialism, technology, and the resilience of humanity.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "Do Androids Dream of Electric Sheep?",
+        "book_author": "Philip K. Dick",
+        "book_description": "A science fiction novel set in a post-apocalyptic world where androids are indistinguishable from humans, exploring themes of identity, empathy, and what it means to be human.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "The Giver",
+        "book_author": "Lois Lowry",
+        "book_description": "A dystopian novel set in a society where all memories and emotions are suppressed, following a young boy who discovers the truth and seeks to escape.",
+        "genre": "dystopian fiction"
+    },
+    {
+        "book_name": "Ender's Game",
+        "book_author": "Orson Scott Card",
+        "book_description": "A science fiction novel following a young boy recruited into an elite military training program to prepare for an impending alien invasion.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "The Time Machine",
+        "book_author": "H.G. Wells",
+        "book_description": "A science fiction novel following an inventor who builds a machine that allows him to travel through time, witnessing the distant future and the decline of humanity.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "The Left Hand of Darkness",
+        "book_author": "Ursula K. Le Guin",
+        "book_description": "A science fiction novel exploring themes of gender and sexuality on a planet where its inhabitants are ambisexual and can change gender at will.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "Ready Player One",
+        "book_author": "Ernest Cline",
+        "book_description": "A science fiction novel set in a dystopian future where most of humanity spends their time in a virtual reality world, following a young man on a quest to find an Easter egg hidden within the virtual world.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "The Man in the High Castle",
+        "book_author": "Philip K. Dick",
+        "book_description": "An alternate history novel set in a world where the Axis Powers won World War II, depicting life in the former United States under Japanese and German occupation.",
+        "genre": "alternate history fiction"
+    },
+    {
+        "book_name": "Oryx and Crake",
+        "book_author": "Margaret Atwood",
+        "book_description": "A speculative fiction novel set in a future where genetic engineering and corporate greed have led to the collapse of human civilization.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "The Road to Dune",
+        "book_author": "Frank Herbert, Brian Herbert, Kevin J. Anderson",
+        "book_description": "A collection of essays, articles, and short stories related to the 'Dune' series, including previously unpublished material and insights into the world of 'Dune'.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "The Matrix Trilogy",
+        "book_author": "Sophia Stewart",
+        "book_description": "A series of science fiction films exploring themes of reality, simulation, and the nature of consciousness, following a group of rebels fighting against a machine-controlled dystopia.",
+        "genre": "science fiction"
+    },
+    {
+        "book_name": "The Stand",
+        "book_author": "Stephen King",
+        "book_description": "A post-apocalyptic novel following a group of survivors after a deadly pandemic wipes out most of humanity, as they struggle to rebuild society and confront supernatural forces.",
+        "genre": "post-apocalyptic fiction"
     }
 ]
 
