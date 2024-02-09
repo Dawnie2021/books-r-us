@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User } = require("../models");
+const { User, Book } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get(
@@ -36,18 +36,27 @@ router.get("/signup", (req, res) => {
   res.render("signup");
 });
 
-router.get("/dashboard", (req, res) => {
+router.get("/dashboard", async (req, res) => {
+  const bookData = await Book.findAll();
+  const books = bookData.map(o => o.get());
+
   res.render(
     "dashboard", // template name
     {
-      id: 1,
-      book_name: "The Da Vinci Code",
-      book_author: "Dan Brown",
-      book_description:
-        "Follows symbologist Robert Langdon as he unravels a murder mystery in the Louvre Museum, delving into a conspiracy involving the Catholic Church and the search for the Holy Grail.",
-      genre: "mystery",
+      books
     }
   );
 });
 
+router.get("/books/:id", async (req, res) => {
+  const bookData = await Book.findByPk(req.params.id);
+  const book = bookData.get();
+
+  res.render(
+    "book", // template name
+    {
+      book, 
+    }
+  );
+});
 module.exports = router;

@@ -1,6 +1,13 @@
 .card {
-  height: 90px;
-  width: 60px;
+  height: 120px;
+  width: 80px;
+
+}
+
+.card-base{
+  display: flex;
+  justify-content:center;
+ align-items: center;
 }
 
 .card-body {

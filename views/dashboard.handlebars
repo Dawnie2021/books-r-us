@@ -5,11 +5,15 @@
     <h1 class="m-3 title">Dashboard</h1>
     <div>
       <div id="parent" class="is-flex">
+      {{#each books}}
+        <a href="/books/{{id}}">
         <figure class="card-base card m-2">
           <div class="card-body playlist-name subtitle has-text-centered">
             {{book_name}}
           </div>
         </figure>
+        </a>
+      {{/each}}
       </div>
     </div>
   </div>
