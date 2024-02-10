@@ -1,12 +1,10 @@
 .card {
   height: 180px;
   width: 120px;
-
 }
 
-.card-base{
+.card-base {
   display: flex;
-  justify-content:center;
- align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
