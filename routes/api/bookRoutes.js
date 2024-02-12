@@ -4,7 +4,7 @@ const Book = require('../../models/Book');
 router.post('/', async (req, res) => {
     try {
         const bookData = await Book.create({
-            book_title: req.body.book_title,
+            book_name: req.body.book_title,
             book_description: req.body.book_description,
             author_name: req.body.author_name,
             genre: req.body - genre
