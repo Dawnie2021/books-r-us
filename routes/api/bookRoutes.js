@@ -23,8 +23,6 @@ router.post('/fav/:id', async (req, res) => {
         const userData = await User.findByPk(req.session.user_id, { include: [Book]});
         const userBookIds = serialize(await userData.getBooks()).map(o => String(o.id));
 
-        console.log(userBookIds);
-
         if (userBookIds.includes(req.params.id)) {
             console.log('MATCH')
             await userData.removeBook(req.params.id);

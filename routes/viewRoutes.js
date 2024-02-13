@@ -2,6 +2,8 @@ const router = require("express").Router();
 const { User, Book } = require("../models");
 const withAuth = require("../utils/auth");
 
+const serialize = (data) => JSON.parse(JSON.stringify(data));
+
 router.get("/", (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/dashboard');
@@ -53,20 +55,32 @@ router.get("/dashboard", async (req, res) => {
     return;
   }
 
-  const bookData = await Book.findAll();
-  const all = bookData.map(o => o.get());
+  try {
+    const userData = await User.findByPk(req.session.user_id, { include: [Book] });
+    const userBookIds = serialize(await userData.getBooks()).map(o => String(o.id));
+    let books = [];
 
-  
+    for (let b in userBookIds) {
+      let current = await Book.findByPk(userBookIds[b])
+      books.push(current);
+    }
 
-  /* if (books.count <= 0)
-    res.redirect("/all"); */
+    console.log("BOOK IDS", books);
+
+    res.render(
+      "dashboard", // template name
+      {
+        books
+      }
+    );
+
+    return;
+  } catch (err) {
+    console.log(err);
+  }
 
   res.render(
     "dashboard", // template name
-
-/*     {
-      books
-    } */
   );
 });
 
