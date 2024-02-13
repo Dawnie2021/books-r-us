@@ -1,5 +1,7 @@
 const router = require('express').Router();
-const Book = require('../../models/Book');
+const { User, Book } = require('../../models');
+
+const serialize = (data) => JSON.parse(JSON.stringify(data));
 
 router.post('/', async (req, res) => {
     try {
@@ -12,6 +14,29 @@ router.post('/', async (req, res) => {
 
         res.redirect('/');
     } catch (err) {
+        res.status(400).json(err);
+    }
+});
+
+router.post('/fav/:id', async (req, res) => {
+    try {
+        const userData = await User.findByPk(req.session.user_id, { include: [Book]});
+        const userBookIds = serialize(await userData.getBooks()).map(o => String(o.id));
+
+        console.log(userBookIds);
+
+        if (userBookIds.includes(req.params.id)) {
+            console.log('MATCH')
+            await userData.removeBook(req.params.id);
+        } else {
+            await userData.addBook(req.params.id);
+        }
+
+        await userData.save();
+
+        res.redirect('/');
+    } catch (err) {
+        console.log(err);
         res.status(400).json(err);
     }
 });
