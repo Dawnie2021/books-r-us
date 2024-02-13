@@ -5,6 +5,10 @@ const withAuth = require("../utils/auth");
 router.get(
   "/",
   /* withAuth, async */ (req, res) => {
+    if (req.session.loggedIn) {
+      res.redirect('/dashboard');
+      return;
+    }
     res.render("index", {
       /*     users,
     loggedIn: req.session.loggedIn, */
@@ -24,24 +28,33 @@ router.get(
 );
 
 router.get("/login", (req, res) => {
-  /*   if (req.session.loggedIn) {
-    res.redirect('/');
+    if (req.session.loggedIn) {
+    res.redirect('/dashboard');
     return;
   }
- */
+ 
   res.render("login");
 });
 
 router.get("/signup", (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/dashboard');
+    return;
+  }
   res.render("signup");
 });
 
 router.get("/dashboard", async (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
   const bookData = await Book.findAll();
   const books = bookData.map(o => o.get());
 
   res.render(
     "dashboard", // template name
+    
     {
       books
     }
