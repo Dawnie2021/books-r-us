@@ -62,7 +62,8 @@ router.get("/dashboard", async (req, res) => {
 
     for (let b in userBookIds) {
       let current = await Book.findByPk(userBookIds[b])
-      books.push(current);
+      console.log("CURRENT", current);
+      books.push(current.dataValues);
     }
 
     console.log("BOOK IDS", books);
