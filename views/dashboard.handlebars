@@ -6,6 +6,7 @@
     <div>
       <div id="parent" class="is-flex is-flex-wrap-wrap">
       {{#each books}}
+      <div style="flex-direction: column; display: flex;">
         <a href="/books/{{id}}">
         <figure class="card-base card m-2">
           {{!-- playlist name? --}}
@@ -14,6 +15,10 @@
           </div>
         </figure>
         </a>
+        <form action="/api/books/fav/{{id}}" method="post">
+        <button type="submit">Fav</button>
+        </form>
+        </div>
       {{/each}}
       </div>
     </div>
