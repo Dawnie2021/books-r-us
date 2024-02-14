@@ -9,8 +9,7 @@ router.get("/", (req, res) => {
     res.redirect('/dashboard');
     return;
   }
-  res.render("index", {
-  });
+  res.render("index", { loggedIn: req.session.loggedIn });
 }
 );
 
@@ -20,7 +19,7 @@ router.get("/login", (req, res) => {
     return;
   }
 
-  res.render("login");
+  res.render("login", { loggedIn: req.session.loggedIn });
 });
 
 router.get("/signup", (req, res) => {
@@ -28,7 +27,7 @@ router.get("/signup", (req, res) => {
     res.redirect('/dashboard');
     return;
   }
-  res.render("signup");
+  res.render("signup", { loggedIn: req.session.loggedIn });
 });
 
 router.get("/dashboard/all", async (req, res) => {
@@ -44,7 +43,8 @@ router.get("/dashboard/all", async (req, res) => {
     "dashboard", // template name
 
     {
-      books
+      books, 
+      loggedIn: req.session.loggedIn,
     }
   );
 });
@@ -71,7 +71,7 @@ router.get("/dashboard", async (req, res) => {
     res.render(
       "dashboard", // template name
       {
-        books
+        books, loggedIn: req.session.loggedIn
       }
     );
 
@@ -92,9 +92,19 @@ router.get("/books/:id", async (req, res) => {
   res.render(
     "book", // template name
     {
-      book,
+      book, loggedIn: req.session.loggedIn
     }
   );
+});
+
+router.get("/logout", async (req, res) => {
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
+      res.redirect("/");
+    });
+  } else {
+    res.redirect("/");
+  }
 });
 
 module.exports = router;

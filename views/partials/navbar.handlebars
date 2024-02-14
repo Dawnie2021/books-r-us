@@ -7,22 +7,17 @@
     <a class="navbar-item" href="/">
       <h1 class="title">Books-Я-Us</h1>
     </a>
-    <a
-      class="navbar-item"
-      target="#blank"
-      href="https://github.com/Dawnie2021/books-r-us"
-    >
-      <div class="subtitle">GitHub</div>
-    </a>
     <a class="navbar-item" href="/dashboard">
       <div class="list-item is-active subtitle">Home</div>
     </a>
     <a class="navbar-item" href="/dashboard/all">
       <div class="list-item is-active subtitle">All Books</div>
     </a>
+    {{#if loggedIn}}
     <a class="navbar-item" href="/logout">
       <div id="logout" class="list-item is-active subtitle">Logout</div>
     </a>
+    {{/if}}
     <a
       role="button"
       class="navbar-burger"
