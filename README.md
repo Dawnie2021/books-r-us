@@ -23,7 +23,7 @@ Bulma
 Heroku
 
 ## Live Link
-https://www.awesomescreenshot.com/video/24947751?key=9a77bc0083fa5cfe24c01e5d53a91490
+https://www.awesomescreenshot.com/video/24947934?key=242186abd0277018162d1ada81559074
 
 
 Made with ❤ by Conner Baltich, Dawn Nguyen, Siry Siu, and Jackson Byrd.
