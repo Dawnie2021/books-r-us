@@ -5,13 +5,10 @@
   "main": "server.js",
   "scripts": {
     "launch": "npm install && npm run watch",
-    "prestart": "node config/init",
     "start": "node server",
-    "preseed": "node config/init seed",
     "seed": "node seeds/index",
-    "prewatch": "node config/init",
-    "watch": "nodemon server",
-    "postinstall": "cp ./.env.example ./.env"
+    "watch": "nodemon server"
+ 
   },
   "keywords": [],
   "author": "",

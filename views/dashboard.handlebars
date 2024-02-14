@@ -5,6 +5,9 @@
     <h1 class="m-3 title">Dashboard</h1>
     <div>
       <div id="parent" class="is-flex is-flex-wrap-wrap">
+        {{#unless books}}
+        <h3>No Books Saved</h3>
+        {{/unless}}
       {{#each books}}
       <div style="flex-direction: column; display: flex;">
         <a href="/books/{{id}}">
