@@ -7,7 +7,6 @@
     "launch": "npm install && npm run watch",
     "start": "node server",
     "seed": "node seeds/index",
-    "prewatch": "node config/init",
     "watch": "nodemon server"
  
   },
