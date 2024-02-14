@@ -22,6 +22,8 @@ const submitted = async (event) => {
     })
         .then(response => response.json())
         .then(response => console.log(JSON.stringify(response)))
+        .then(() => window.location.assign('/dashboard'))
+        .catch(() => window.location.assign('/'));
 };
 
 submitButton.addEventListener("click", submitted);

@@ -14,7 +14,7 @@ const submitted = async (event) => {
         "books": []
     };
 
-    fetch('http://localhost:3001/api/users', {
+    fetch('http://localhost:3001/api/users/signup', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

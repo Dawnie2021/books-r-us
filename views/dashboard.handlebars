@@ -5,6 +5,9 @@
     <h1 class="m-3 title">Dashboard</h1>
     <div>
       <div id="parent" class="is-flex is-flex-wrap-wrap">
+        {{#unless books}}
+        <h3>No Books Saved</h3>
+        {{/unless}}
       {{#each books}}
       <div style="flex-direction: column; display: flex;">
         <a href="/books/{{id}}">
@@ -16,7 +19,7 @@
         </figure>
         </a>
         <form action="/api/books/fav/{{id}}" method="post">
-        <button type="submit">Fav</button>
+          <button class="button" type="submit">♡</button>
         </form>
         </div>
       {{/each}}
@@ -24,5 +27,5 @@
     </div>
   </div>
 </section>
-<script src="js/dashboard.js"></script>
-<link rel="stylesheet" href="css/dashboard.css" />
+<script src="/js/dashboard.js"></script>
+<link rel="stylesheet" href="/css/dashboard.css" />
