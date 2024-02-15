@@ -4,7 +4,6 @@ const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 
 const submitted = async (event) => {
-    console.log(email.value, password.value);
     event.preventDefault();
 
     let bodyData = {
@@ -24,6 +23,8 @@ const submitted = async (event) => {
     })
         .then(response => response.json())
         .then(response => console.log(JSON.stringify(response)))
+        .then(() => window.location.assign('/dashboard'))
+        .catch(() => window.location.assign('/'));
 };
 
 submitButton.addEventListener("click", submitted);

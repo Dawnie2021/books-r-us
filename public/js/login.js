@@ -3,7 +3,6 @@ const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 
 const submitted = async (event) => {
-    console.log(email.value, password.value);
     event.preventDefault();
 
     let bodyData = {
@@ -12,7 +11,7 @@ const submitted = async (event) => {
 
     };
 
-    fetch('http://localhost:3001/api/users/login', {
+    fetch('/api/users/login', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
