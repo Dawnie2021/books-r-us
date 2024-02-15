@@ -23,7 +23,7 @@ Bulma
 Heroku
 
 ## Live Link
-https://www.awesomescreenshot.com/video/24947934?key=242186abd0277018162d1ada81559074
+https://ancient-savannah-15473-038527b99940.herokuapp.com/
 
 
 Made with ❤ by Conner Baltich, Dawn Nguyen, Siry Siu, and Jackson Byrd.
