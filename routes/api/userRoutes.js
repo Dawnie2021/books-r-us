@@ -44,7 +44,7 @@ router.post('/login', async (req, res) => {
 
       // res.redirect("../../dashboard");
       // res.json({ user: userData, message: 'You are now logged in!' });
-
+      res.status(200).json(userData);
     });
 
   } catch (err) {

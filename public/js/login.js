@@ -12,7 +12,7 @@ const submitted = async (event) => {
 
     };
 
-    fetch('http://localhost:3001/api/users/login', {
+    fetch('/api/users/login', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
