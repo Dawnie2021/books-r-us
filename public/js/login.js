@@ -3,7 +3,6 @@ const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 
 const submitted = async (event) => {
-    console.log(email.value, password.value);
     event.preventDefault();
 
     let bodyData = {
