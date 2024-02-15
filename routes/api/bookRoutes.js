@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
 
 router.post('/fav/:id', async (req, res) => {
     try {
-        const userData = await User.findByPk(req.session.user_id, { include: [Book]});
+        const userData = await User.findByPk(req.session.user_id, { include: [Book] });
         const userBookIds = serialize(await userData.getBooks()).map(o => String(o.id));
 
         if (userBookIds.includes(req.params.id)) {

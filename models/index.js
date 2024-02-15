@@ -15,7 +15,7 @@ User.belongsToMany(Book, {
 
 
 
-module.exports = { 
-User,
-Book
+module.exports = {
+    User,
+    Book
 };

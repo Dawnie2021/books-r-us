@@ -24,9 +24,8 @@ a {
 }
 
 a:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
-
 
 .hero {
   justify-content: center;
