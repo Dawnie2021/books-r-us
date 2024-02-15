@@ -23,9 +23,6 @@ const sess = {
   })
 };
 
-// Test comment
-// Comment again
-
 app.use(session(sess));
 
 app.engine('handlebars', exphbs({

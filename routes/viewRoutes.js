@@ -43,7 +43,7 @@ router.get("/dashboard/all", async (req, res) => {
     "dashboard", // template name
 
     {
-      books, 
+      books,
       loggedIn: req.session.loggedIn,
     }
   );
